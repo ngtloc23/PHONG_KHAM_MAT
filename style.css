@@ -1,0 +1,159 @@
+/* CÀI ĐẶT CHUNG */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    color: #333;
+}
+
+
+/* THANH CÔNG CỤ */
+
+header {
+    background-color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1677ff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #1677ff;
+}
+
+
+/* HOME */
+
+.home {
+    text-align: center;
+    padding: 100px 20px;
+
+    background-color: #eaf4ff;
+}
+
+.home h1 {
+    font-size: 42px;
+    color: #1261c9;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #1677ff;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 25px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #075dcc;
+}
+
+
+/* TÌM KIẾM */
+
+.search-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.search-section h2 {
+    color: #1261c9;
+}
+
+.search-section input {
+    width: 300px;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchResult {
+    margin-top: 20px;
+    color: #1261c9;
+}
+
+
+/* GIỚI THIỆU */
+
+.intro {
+    background-color: white;
+    text-align: center;
+
+    padding: 60px 20%;
+}
+
+.intro h2 {
+    color: #1261c9;
+}
+
+.intro p {
+    line-height: 1.7;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #12304a;
+    color: white;
+
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ĐIỆN THOẠI */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .search-section input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
